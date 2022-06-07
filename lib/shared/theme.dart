@@ -5,6 +5,7 @@ double defaultMargin = 24.0;
 double defaultRadius = 17.0;
 
 Color kPrimaryColor = Color(0xff169DD7);
+Color kPrimaryLightColor = Color(0xffAFD6E7);
 Color kBlackColor = Color(0xff12313E);
 Color kWhiteColor = Color(0xffFFFFFF);
 Color kGreyColor = Color(0xff9698A9);
@@ -13,6 +14,10 @@ Color kRedColor = Color(0xffEB70A5);
 Color kbackgroundColor = Color(0xffFAFAFA);
 Color kInactiveColor = Color(0xffAFD6E7);
 Color kTransparentColor = Colors.transparent;
+
+TextStyle primaryTextStyle = GoogleFonts.poppins(
+  color: kPrimaryColor,
+);
 
 TextStyle blackTextStyle = GoogleFonts.poppins(
   color: kBlackColor,

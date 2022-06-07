@@ -27,8 +27,8 @@ class _SplashPage extends State<SplashPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: 150,
-              height: 150,
+              width: 269,
+              height: 236,
               margin: EdgeInsets.only(bottom: 10),
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -38,7 +38,8 @@ class _SplashPage extends State<SplashPage> {
             ),
             Text(
               'Wisata.In',
-              style: blackTextStyle.copyWith(fontSize: 32, fontWeight: medium),
+              style: blackTextStyle.copyWith(
+                  fontSize: 32, fontWeight: medium, letterSpacing: 10),
             )
           ],
         ),

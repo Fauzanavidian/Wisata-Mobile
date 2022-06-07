@@ -14,7 +14,7 @@ class GetStarted extends StatelessWidget {
             height: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/bg2.jpg'),
+                image: AssetImage('assets/bg4.jpg'),
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -24,7 +24,7 @@ class GetStarted extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
-                  'around our country',
+                  'Wisata',
                   style: whiteTextStyle.copyWith(
                       fontSize: 32, fontWeight: semiBold),
                 ),
@@ -32,7 +32,7 @@ class GetStarted extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                  'Explore new world with us and let \n yourself get an amazing experiences',
+                  'Explore new world with us and let \n ryourself get an amazing experiences',
                   style: whiteTextStyle.copyWith(
                     fontSize: 16,
                     fontWeight: light,
@@ -45,7 +45,7 @@ class GetStarted extends StatelessWidget {
                   margin: EdgeInsets.only(top: 50, bottom: 80),
                   child: TextButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/sign_up_page');
+                      Navigator.pushNamed(context, '/sign_in_page');
                     },
                     style: TextButton.styleFrom(
                       backgroundColor: kPrimaryColor,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wisatain_mobile/ui/get_started_page.dart';
 import 'package:wisatain_mobile/ui/splash_page.dart';
+import 'package:wisatain_mobile/ui/sign_up_page.dart';
+import 'package:wisatain_mobile/ui/sign_in_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashPage(),
         '/get-started': (context) => GetStarted(),
+        '/sign_up_page': (context) => SignUpPage(),
+        '/sign_in_page': (context) => SignInPage(),
       },
     );
   }
