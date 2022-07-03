@@ -24,7 +24,6 @@ class listFav extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(17),
                 child: Image.network(
-                  // "https://dummyimage.com/600x400/000/fff&text=image",
                   wisata.foto,
                   fit: BoxFit.cover,
                 ),

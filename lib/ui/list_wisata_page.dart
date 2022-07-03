@@ -16,7 +16,6 @@ final String url = 'http://127.0.0.1:8000/api/admin-wisata';
 
 Future<List<Wisata>> getwisata() async {
   var response = await http.get(Uri.parse(url));
-  // print(json.decode(response.body));
   return (json.decode(response.body)['data'] as List)
       .map((e) => Wisata.fromJson(e))
       .toList();

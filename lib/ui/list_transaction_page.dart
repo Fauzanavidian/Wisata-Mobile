@@ -24,7 +24,6 @@ class _transactionPageState extends State<transactionPage> {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer $value',
     });
-    // print(json.decode(response.body));
     return (json.decode(response.body)['data'] as List)
         .map((e) => Booked.fromJson(e))
         .toList();

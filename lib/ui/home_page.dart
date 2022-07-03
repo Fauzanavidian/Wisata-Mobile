@@ -36,7 +36,6 @@ class _HomePageState extends State<HomePage> {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $value',
         });
-    // print(json.decode(response.body));
     return Profile.fromJson(json.decode(response.body)['data']);
   }
 
@@ -52,15 +51,10 @@ class _HomePageState extends State<HomePage> {
       color: kbackgroundColor,
       child: ListView(
         children: [
-          //text and profile pict
           textAndProfile(),
-          //Text
           text(),
-          //List wisata
           listWisata(),
-          //Text
           textFav(),
-          //list favorite
           listCard()
         ],
       ),
@@ -237,7 +231,6 @@ class _HomePageState extends State<HomePage> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(17),
                       child: Image.network(
-                        // "https://dummyimage.com/600x400/000/fff&text=image",
                         wisata.foto,
                         fit: BoxFit.cover,
                       ),
