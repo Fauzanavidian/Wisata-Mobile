@@ -179,20 +179,6 @@ class SignInPage extends StatelessWidget {
         ),
       );
     }
-
-    // Widget checkbox() {
-    //   return Checkbox(
-    //     checkColor: Colors.white,
-    //     fillColor: MaterialStateProperty.resolveWith(getColor),
-    //     value: isChecked,
-    //     onChanged: (bool? value) {
-    //       setState(() {
-    //         isChecked = value!;
-    //       });
-    //     },
-    //   );
-    // }
-
     return Scaffold(
       backgroundColor: kbackgroundColor,
       body: SafeArea(
