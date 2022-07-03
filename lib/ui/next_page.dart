@@ -33,14 +33,9 @@ class _nextPageState extends State<nextPage> {
       Navigator.pushNamed(context, '/success_page');
       return print('success');
     } else {
-      // throw Exception('Failed to login');
       return print('error');
     }
   }
-
-  // var firstName = TextEditingController();
-  // var lastName = TextEditingController();
-  // var age = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +107,6 @@ class _nextPageState extends State<nextPage> {
                 height: 6,
               ),
               TextFormField(
-                // controller: lastName,
                 cursorColor: kBlackColor,
                 decoration: InputDecoration(
                   hintText: 'Your Last Name',
@@ -147,7 +141,6 @@ class _nextPageState extends State<nextPage> {
                 height: 6,
               ),
               TextFormField(
-                // controller: age,
                 cursorColor: kBlackColor,
                 decoration: InputDecoration(
                   hintText: 'Your age',

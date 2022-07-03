@@ -20,10 +20,6 @@ class _MainPageState extends State<MainPage> {
   List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     transactionPage(),
-    // Text(
-    //   'Profile_aja',
-    //   style: optionStyle,
-    // ),
     ProfilePage(),
     AboutUsPage(),
   ];

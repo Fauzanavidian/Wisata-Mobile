@@ -25,7 +25,6 @@ class _ProfilePageState extends State<ProfilePage> {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $value',
         });
-    // print(json.decode(response.body));
     return Profile.fromJson(json.decode(response.body)['data']);
   }
 
@@ -61,10 +60,8 @@ class _ProfilePageState extends State<ProfilePage> {
       color: kbackgroundColor,
       child: ListView(
         children: [
-          //text and profile pict
           textAndProfile(),
           submitButton(),
-          //Text
         ],
       ),
     );
@@ -81,7 +78,6 @@ class _ProfilePageState extends State<ProfilePage> {
               if (snapshot.hasData) {
                 Profile _profile = snapshot.data as Profile;
                 return Container(
-                  // margin: EdgeInsets.all(30),
                   padding: EdgeInsets.symmetric(
                     horizontal: 20,
                     vertical: 20,
